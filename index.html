@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG - Ecos da escuridão</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="./scripts/script.js"></script>
+
+</head>
+<body> <!-- <body onload="loadJSON()"> -->
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="#" onclick="changePage(event, 'inicio')">Inicio</a>
+        <a href="#" onclick="changePage(event, 'atributos')">Atributos</a>
+        <a href="#" onclick="changePage(event, 'play')">Play</a>
+    </div>
+
+  <!-- Page content -->
+    <div class="main">
+
+        <!-- Header -->
+        <div class="main-header">
+            <h2>RPG - Ecos da escuridão</h2>
+            <!-- <p id="msg">It's Horror Time!!!</p> -->
+        </div>
+
+        <!-- Pagina principal -->
+        <div id="inicio" class="w3-container page" style="display:none">
+            <h2>inicio</h2>
+            <p>inicio is the capital page of England.</p>
+            <p>It is the most populous page in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        </div>
+
+        <!-- Pagina Atributos -->
+        <div id="atributos" class="w3-container page" style="display:block">
+            <div class="table-wrapper">
+                <table class="fl-table">
+                    <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                        <th>Atributo</th>
+                        <th>Valor</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Arma de fogo</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Furtividade</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Arma branca</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Liderança</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Arremessar</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Lábia</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Biologia</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Lutar</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Charme</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Reparos</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Medicina</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Nadar</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Dirigir</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Ocultar</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Disfarce</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Persoadir</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Fotografia</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Pesquisar</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Escalar</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Primeiros socorros</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Encontrar</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Psicologia</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Escutar</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Pulo</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Rastrear</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                        <td>Manuseio</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>Força</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Esquiva</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Constituição</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Inteligência</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tr>
+                        <td>Sorte</td>
+                        <td><input class="atributos-input" type="number" value="0" onclick="mostraModal(event.target.value)" ></td>
+                    </tr>
+                    <tbody>
+                </table>
+            </div>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+        </div>
+
+        <!-- Pagina Play -->
+        <div id="play" class="w3-container page" style="display:none">
+            <h2>play</h2>
+            <p>play is the capital of Japan.</p>
+            <p>It is the center of the Greater play Area, and the most populous metropolitan area in the world.</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div> -->
+                <div class="modal-body">
+                    <div class="row align-items-center">
+                        <div class="col">
+                          <button type="button" class="btn btn-light" onclick="rolarDado(4)">d4</button>
+                        </div>
+                        <div class="col">
+                          <button type="button" class="btn btn-light" onclick="rolarDado(6)">d6</button>
+                        </div>
+                        <div class="col">
+                          <button type="button" class="btn btn-light" onclick="rolarDado(10)">d10</button>
+                        </div>
+                        <div class="col">
+                          <button type="button" class="btn btn-light" onclick="rolarDado(12)">d12</button>
+                        </div>
+                        <div class="col">
+                          <button type="button" class="btn btn-light" onclick="rolarDado(20)">d20</button>
+                        </div>
+                        <div class="col">
+                          <button type="button" class="btn btn-light" onclick="rolarDado(100)">d100</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <div class="main-header">
+                                <p id="msg">Escolha um dos dados</p>
+                            </div>
+                            <div class="main-header">
+                                <p id="valores-atrib-dado">.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
